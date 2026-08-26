@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Корочки.есть — Регистрация</title>
+    <title>Корочки.есть — Авторизация</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header class="header-neon">
+    <!-- Шапка -->
+     <header class="header-neon">
         <div class="header-neon__logo">Корочки<span>.есть</span></div>
         <nav class="header-neon__nav">
             <a href="index.html">Главная</a>
@@ -21,25 +22,25 @@
         </nav>
     </header>
 
+    <!-- Авторизация -->
     <main>
-        <section class="form-neon">
-            <h2>Регистрация</h2>
-            <p class="form-neon__subtitle">Вход в систему</p>
+        <section class="login-form">
+            <h2>Авторизация</h2>
+            <p class="login-form__subtitle">Вход в систему</p>
+
             <label for="login">Логин</label>
             <input type="text" id="login" placeholder="Введите логин">
+
             <label for="password">Пароль</label>
             <input type="password" id="password" placeholder="Введите пароль">
-            <label for="fullname">ФИО</label>
-            <input type="text" id="fullname" placeholder="Введите ФИО">
-            <label for="phone">Телефон</label>
-            <input type="text" id="phone" placeholder="Введите телефон">
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Введите email">
-            <button type="submit">Создать пользователя</button>
-            <a href="login.html" class="form-neon__link">Уже зарегистрированы? Авторизация</a>
+
+            <button type="submit">Войти</button>
+
+            <a href="index.html" class="login-form__link">Ещё не зарегистрированы? Регистрация</a>
         </section>
     </main>
 
+    <!-- Подвал -->
     <footer class="footer" style="background: #1a1a1a; color: #ffffff; padding: 40px 0; text-align: center;">
         <p>&copy; 2026 Корочки.есть. Все права защищены.</p>
     </footer>

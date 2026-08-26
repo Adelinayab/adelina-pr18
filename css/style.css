@@ -40,7 +40,7 @@
     color: #ff2d78;
 }
 
-.form-neon {
+.form-neon,.login-form {
     max-width: 420px;
     margin: 60px auto;
     padding: 32px;
@@ -51,14 +51,14 @@
     text-align: left   
 }
 
-.form-neon h2 {
+.form-neon h2, .login-form h2{
     font-size: 1.8rem;
     color: #ffffff;
     margin-bottom: 8px;
     text-align: center;
 }
 
-.form-neon__subtitle {
+.form-neon__subtitle,.login-form__subtitle {
     font-size: 1rem;
     color: #ff2d78;
     margin-bottom: 24px;
@@ -72,7 +72,7 @@
     margin-bottom: 8px;
 }
 
-.form-neon input {
+.form-neon input,.login-form input {
     font-size: 1rem;
     color: #ffffff;
     border: 1px solid #ff2d78;
@@ -83,11 +83,11 @@
     background: transparent;
     margin: 10px;
 }
-.form-neon label{
+.form-neon label,.login-form label{
     padding-left: 20px;
 }
 
-.form-neon button {
+.form-neon button,.login-form button {
     font-size: 1.1rem;
     font-weight: bold;
     color: #ffffff;
@@ -98,7 +98,7 @@
     margin: 20px 0px;
 }
 
-.form-neon__link {
+.form-neon__link,.login-form__link {
     font-size: 0.9rem;
     color: #ff2d78;
     text-align: center ;
@@ -106,6 +106,11 @@
     text-decoration: none;
 }
 
-.form-neon__link:hover {
+.form-neon__link:hover,.login-form__link:hover {
     color: #ff8ae0;
 }
+
+
+
+
+
