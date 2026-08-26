@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header-neon {
+    background: rgba(0,0,0,0.9);
+    padding: 24px 0;
+    text-align: center;
+}
+
+.header-neon__logo {
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.header-neon__logo span {
+    color: #ff2d78;
+}
+
+.header-neon__nav {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 30px;
+}
+
+.header-neon__nav a {
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.header-neon__nav a:hover {
+    color: #ff2d78;
+}
+
+.form-neon {
+    max-width: 420px;
+    margin: 60px auto;
+    padding: 32px;
+    background: rgba(20, 20, 20, 0.95);
+    border-radius: 16px;
+    color: #f8f7f7;
+    font-size: 15px;
+    text-align: left   
+}
+
+.form-neon h2 {
+    font-size: 1.8rem;
+    color: #ffffff;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.form-neon__subtitle {
+    font-size: 1rem;
+    color: #ff2d78;
+    margin-bottom: 24px;
+    text-align: center;
+
+}
+
+.form-neon__icon {
+    font-size: 1.5rem;
+    color: #ff2d78;
+    margin-bottom: 8px;
+}
+
+.form-neon input {
+    font-size: 1rem;
+    color: #ffffff;
+    border: 1px solid #ff2d78;
+    border-radius: 8px;
+    padding: 12px 16px;
+    width: 90%;
+    margin-bottom: 16px;
+    background: transparent;
+    margin: 10px;
+}
+.form-neon label{
+    padding-left: 20px;
+}
+
+.form-neon button {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background: #ff2d78;
+    border-radius: 8px;
+    padding: 12px 24px;
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.form-neon__link {
+    font-size: 0.9rem;
+    color: #ff2d78;
+    text-align: center ;
+    display: block;
+    text-decoration: none;
+}
+
+.form-neon__link:hover {
+    color: #ff8ae0;
+}
