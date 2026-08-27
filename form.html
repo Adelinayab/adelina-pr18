@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корочки.есть — Формирование заявки</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header-neon">
+        <div class="header-neon__logo">Корочки<span>.есть</span></div>
+        <nav class="header-neon__nav">
+            <a href="index.html">Регистрация</a>
+            <a href="requests.html">Заявки</a>
+            <a href="form.html">Форма</a>
+            <a href="admin.html">Админ</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-page">
+            <div class="container">
+                <h1>Формирование заявки</h1>
+                <form>
+                    <h2>Заявка на курс</h2>
+                    <label for="course">Курс</label>
+                    <select id="course">
+                        <option value="design">Дизайн интерьеров</option>
+                        <option value="landscape">Ландшафтный дизайн</option>
+                        <option value="architecture">Архитектурное проектирование</option>
+                        <option value="digital">Дизайн цифровых продуктов</option>
+                    </select>
+                    <label for="date">Дата начала обучения</label>
+                    <input type="date" id="date" placeholder="Введите дату">
+                    <label for="payment">Способ оплаты</label>
+                    <select id="payment">
+                        <option value="cash">Наличными</option>
+                        <option value="transfer">Переведен по номеру телефона</option>
+                    </select>
+                    <button type="submit">Отправить</button>
+                </form>
+                <section class="slider-portal">
+                    <div class="slider-portal__slides">
+                        <div class="slider-portal__slide" style="background-image: url('img/image01.webp');"></div>
+                        <div class="slider-portal__slide" style="background-image: url('img/image02.jpg');"></div>
+                        <div class="slider-portal__slide" style="background-image: url('img/image04.jpg');"></div>
+                        <div class="slider-portal__slide" style="background-image: url('img/image05.jpg');"></div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" style="background: #1a1a1a; color: #ffffff; padding: 40px 0; text-align: center;">
+        <p>&copy; 2026 Корочки.есть. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>

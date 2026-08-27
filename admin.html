@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корочки.есть | Админ-панель</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="header-neon">
+        <div class="header-neon__logo">Корочки<span>.есть</span></div>
+        <nav class="header-neon__nav">
+            <a href="index.html">Регистрация</a>
+            <a href="requests.html">Заявки</a>
+            <a href="form.html">Форма</a>
+            <a href="admin.html">Админ</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="admin">
+            <div class="container">
+                <h1>Управление заявками</h1>
+                <div class="admin-filters">
+                    <button class="filter-btn active">Все</button>
+                    <button class="filter-btn">Новые</button>
+                    <button class="filter-btn">Идёт обучение</button>
+                    <button class="filter-btn">Завершены</button>
+                </div>
+                <div class="admin-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Пользователь</th>
+                                <th>Курс</th>
+                                <th>Дата</th>
+                                <th>Статус</th>
+                                <th>Действие</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Иван Петров</td>
+                                <td>Веб-разработка</td>
+                                <td>01.09.2026</td>
+                                <td><span class="status status-new">Новая</span></td>
+                                <td>
+                                    <select class="status-select">
+                                        <option value="new" selected>Новая</option>
+                                        <option value="progress">Идёт обучение</option>
+                                        <option value="completed">Завершено</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Елена Смирнова</td>
+                                <td>UX/UI Дизайн</td>
+                                <td>15.06.2026</td>
+                                <td><span class="status status-progress">Идёт обучение</span></td>
+                                <td>
+                                    <select class="status-select">
+                                        <option value="new">Новая</option>
+                                        <option value="progress" selected>Идёт обучение</option>
+                                        <option value="completed">Завершено</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Алексей Иванов</td>
+                                <td>Python-разработка</td>
+                                <td>10.01.2026</td>
+                                <td><span class="status status-completed">Завершено</span></td>
+                                <td>
+                                    <select class="status-select">
+                                        <option value="new">Новая</option>
+                                        <option value="progress">Идёт обучение</option>
+                                        <option value="completed" selected>Завершено</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" style="background: #1a1a1a; color: #ffffff; padding: 40px 0; text-align: center;">
+        <p>&copy; 2026 Корочки.есть. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>

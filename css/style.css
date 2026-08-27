@@ -40,7 +40,9 @@
     color: #ff2d78;
 }
 
-.form-neon,.login-form {
+.form-neon,
+.login-form,
+.form-page form {
     max-width: 420px;
     margin: 60px auto;
     padding: 32px;
@@ -51,19 +53,21 @@
     text-align: left   
 }
 
-.form-neon h2, .login-form h2{
+.form-neon h2, 
+.login-form h2 ,
+.form-page form h2 {
     font-size: 1.8rem;
     color: #ffffff;
     margin-bottom: 8px;
     text-align: center;
 }
 
-.form-neon__subtitle,.login-form__subtitle {
+.form-neon__subtitle,
+.login-form__subtitle {
     font-size: 1rem;
     color: #ff2d78;
     margin-bottom: 24px;
     text-align: center;
-
 }
 
 .form-neon__icon {
@@ -72,7 +76,11 @@
     margin-bottom: 8px;
 }
 
-.form-neon input,.login-form input,.review input {
+.form-neon input,
+.login-form input,
+.review input,
+.form-page input,
+.form-page select {
     font-size: 1rem;
     color: #ffffff;
     border: 1px solid #ff2d78;
@@ -83,11 +91,16 @@
     background: transparent;
     margin: 10px;
 }
-.form-neon label,.login-form label{
+.form-neon label,
+.login-form label,
+.form-page label{
     padding-left: 20px;
 }
 
-.form-neon button,.login-form button,.review button {
+.form-neon button,
+.login-form button,
+.review button,
+.form-page button  {
     font-size: 1.1rem;
     font-weight: bold;
     color: #ffffff;
@@ -98,7 +111,8 @@
     margin: 20px 0px;
 }
 
-.form-neon__link,.login-form__link {
+.form-neon__link,
+.login-form__link {
     font-size: 0.9rem;
     color: #ff2d78;
     text-align: center ;
@@ -106,16 +120,20 @@
     text-decoration: none;
 }
 
-.form-neon__link:hover,.login-form__link:hover {
+.form-neon__link:hover,
+.login-form__link:hover {
     color: #ff8ae0;
 }
 
-/* ========== СТРАНИЦА ЗАЯВОК ========== */
-.requests {
+.requests, 
+.admin,
+.form-page{
     padding: 60px 0;
 }
 
-.requests h1 {
+.requests h1,
+.admin h1,
+.form-page h1 {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 40px;
@@ -175,4 +193,128 @@
     line-height: 150px;
     font-size: 0.9rem;
 }
+
+.slider-portal {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 24px;
+}
+
+.slider-portal__slides {
+    display: flex;
+    gap: 16px;
+}
+
+.slider-portal__slide {
+    flex: 1;
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    color: #ffffff;
+    line-height: 300px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+}
+
+.slider-portal__controls {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+select option {
+    color: #1a1a1a;
+    background: #ffffff;
+}
+
+.admin-filters {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.filter-btn {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    background: #1a1a1a;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+    background: #ff2d78;
+    color: #1a1a1a;
+}
+
+.admin-table {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 24px;
+    background: #1a1a1a;
+    border-radius: 12px;
+    overflow: hidden;
+    overflow-x: auto;
+    margin-bottom: 100px;
+}
+
+.admin-table table {
+    width: 100%;
+}
+
+.admin-table thead {
+    background: #000;
+}
+
+.admin-table th,
+.admin-table td {
+    padding: 14px 18px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+    color: #ffffff;
+}
+
+.status {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff;
+    display: block;
+}
+
+.status-completed {
+    background: #1a1a1a;
+    border-radius: 8px;
+    padding: 6px 12px;
+}
+
+.status-select {
+    font-size: 13px;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 6px 12px;
+    background: #000;
+}
+@media (max-width: 767px) {
+    .form-neon h2,
+    .login-form h2,
+    .form-page form h2,
+    .review h2 {
+        font-size: 1.5rem;
+    }
+    .request-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .filter-btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }  
+}
+
 
